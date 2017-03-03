@@ -33,6 +33,13 @@ export function InterestCalculator(props) {
     );
 }
 
+InterestCalculator.defaultProps = {
+    principal: 0,
+    interest: 0,
+    years: 0,
+    total: 0
+};
+
 export const mapStateToProps = state => ({
     principal: state.principal,
     interest: state.interest,
